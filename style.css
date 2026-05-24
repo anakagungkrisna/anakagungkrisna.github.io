@@ -39,3 +39,14 @@ h2 {
     border-radius: 12px;
     margin-bottom: 20px;
 }
+
+.profile-image {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile-image img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
