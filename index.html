@@ -146,6 +146,166 @@
                 model is to provide a clean dataset so that the network can work reliably.
             </p>
         </div>
+
+        <div class="card" id="mrRobot">
+            <h3>Mr. Robot </h3>
+            <div class="image-slider">
+                <img src="images/mrRobot1.jpeg" alt="mrRobot1">
+                <img src="images/mrRobot2.jpeg" alt="mrRobot2">
+                <img src="images/mrRobot3.jpeg" alt="mrRobot3">
+                <img src="images/mrRobot4.jpeg" alt="mrRobot4">
+                <img src="images/mrRobot5.jpeg" alt="mrRobot5">
+                <img src="images/mrRobot6.png" alt="mrRobot6">
+            </div>
+            <p>
+                This is a personal project that I have done since the beginning of 2020. It acts like a 
+                learning ground for me to satisfy my curiosity in creating a robot from scratch. Not only that, 
+                it also allows me to apply the knowledge that I gain from the university to real life problems. 
+                This robot is driven with 4 motors that is connected to a mechanum wheels. Those wheels are driven 
+                by STM32 microcontroller which also monitor the wheel encoder of the motor. There are other 
+                microcontrollers that is inside the robot, which are the Arduino pro micro and pro mini to drive 
+                the LEDs, interacting with the LCD display, running the servo motor, reading the GPS sensor, 
+                compass sensor, 6 DOF IMU sensor, thermal camera, and the input from a USB device such as a 
+                USB keyboard for manual control of the robot. Those microcontrollers are connected throguh a 
+                serial communication with each other so that all microcontrollers can exchange data. The brain of 
+                the robot consists of 2 Single Board Computers (SBC), which are the RaspberryPi Zero ver.2 and Lattepanda. 
+                These SBCs will work with the monocular camera attached to the servo motor as the main input of the robot 
+                to sense the environment. Even though it is still far from finish, I hope that as time passes, 
+                I can learn the robotic development process from the ground up and apply the knowledge that I get 
+                later on when I work as a robotic engineer.  
+            </p>
+        </div>
+
+        <div class="card" id="QRcode">
+            <h3>Projektarbeit QR-Code </h3>
+            <div class="image-slider">
+                <img src="images/projektarbeitqrcode.png" alt="projektarbeitqrcode">
+                <img src="images/qrcodeapp1.png" alt="qrcodeapp1">
+                <img src="images/qrcodeapp2.png" alt="qrcodeapp2">
+                <img src="images/qrcodeapp3.png" alt="qrcodeapp3">
+            </div>
+            <p>
+                During my first semester in Germany, I need to be a part of a project to complete my study. 
+                For this, I applied to the project called Projektarbeit QR-Code (Project work QR-Code) and 
+                got accepted. On this project, me and my one colleague were asked to develop a windows application 
+                that is able to work with two functionalities, which are taking an excel file as an input that 
+                consist of students data and output an answer sheets for each of the students in the form of 
+                Microsoft word file and taking an image file of the scanned answer sheet and output an excel file 
+                that consist of the students data from the scanned answer sheets. The way this work is that we create 
+                a windows application that creates a QR code based on the student data and place it in the specified 
+                location of the generated answer sheet. Since QR-Code is basically a medium to store a few number of 
+                characters, we can use it as a medium to exchange data from digital world to physical world and vice versa.  
+                When the answer sheet is to be read, the scanned answer sheet is then taken as input so that the 
+                decoding of the QR code can be executed. By this, we have a system that is able to generate an answer 
+                sheet for the students to fill in and read the answer sheet to know which answer sheet belongs to. 
+                This project is at the end going to be combined with the other project, which are the student answer 
+                recognition system for multiple choice test answer sheet.  
+            </p>
+        </div>
+
+        <div class="card" id="imageclass">
+            <h3>Environment Image Classification </h3>
+            <div class="image-gallery">
+                <img src="images/environment_dataset.png" alt="environment_dataset">
+                <img src="images/environment_training.png" alt="environment_training">
+            </div>
+            <p>
+                During my time taking the Fresh Graduate Academy of Digital Talent Scholarship from the Ministry 
+                of Communication and Information Technology, Indonesia, the last project is to develop a model 
+                that can classify image datasets from kaggle. It is a group of two person and we are free to 
+                choose any dataset that suites our interest. We found environment image classification interesting 
+                and decided to use it for our final project. We create a convolutional neural network for our 
+                model using tensorfow. For the image to classify better in unknown input space, we perform data 
+                augmentation to the dataset such as flip, rotate, and zoom the image. Although the validation 
+                accuracy is not satisfactory yet, which are above 95 percent, We can see an increasing trend for 
+                the accuracy and decreasing trend for the loss, which means the model we created are learning 
+                correctly. We believe by tuning the size of the network and give more epochs to train, our model 
+                are able to classify the images correctly.   
+            </p>
+        </div>
+
+        <div class="card" id="lora">
+            <h3>LoRa Gateway Reporting Automation </h3>
+            <div class="image-gallery">
+                <img src="images/autolora.png" alt="environment_dataset">
+            </div>
+            <p>
+                As for a prerequisite to continue my study of dual-degree program for Universitas Indonesia - 
+                Universität Duisburg-Essen, I need to have an internship for at least 13 weeks. For this, 
+                I was working at Telkom Indonesia in the Department Digital and Next Business. There, I work 
+                closely to the monitoring of the LoRa Gateway that Telkom Indonesia has. Due to inefficient 
+                reporting method that exist, I propose an automatic system for reporting the LoRa Gateway status. 
+                A more familiar term for The system that is created for automizing the manual work done by humans 
+                based on digital workers is called Robotic Process Automation (RPA). Since the LoRa Gateway reporting 
+                task is repetitive, the development of RPA for the task is possible. I use python and requests library 
+                to get all the data about the gateways from the available API and process the data so that it can 
+                output the desired result according to the existed reporting format. At the end, I am able to create 
+                a bot that is able to do the LoRa gateway reporting faster and more reliable and can work 24/7.    
+            </p>
+        </div>
+
+        <div class="card" id="humanoid2">
+            <h3>Humanoid Robots ver.2 </h3>
+            <div class="image-gallery">
+                <img src="images/humanoid21.png" alt="humanoid21">
+                <img src="images/humanoid22.png" alt="humanoid22">
+            </div>
+            <p>
+                As to continuing the work of my team, on November 2020, I also got selected to become the team 
+                leader of the team.  During my tenure, we agreed to develop the old robot that have not been 
+                touched for quite some time since it is made of a better hardware than the robot ver.1. Because 
+                for this year the task of the robot is to run 8 meter across a field and then go back while also 
+                rotate the pole, we decided to use line following method for this task, since there exist a line 
+                from the start position to the pole at 8 meter mark. During the development, there exist many 
+                problems such as bad computer vision algorithm and unstable movement of the robot. By using trial 
+                and error method for the masking of the camera pixel input and determine the position of the line 
+                in respect to the camera of the robot, we have successfully create a simple intelligence than can 
+                make the robot decide whether it should go forward, right, or left. For the unstable movement of 
+                the robot, by taking reference of human movement and the concept of Center of Gravity (CoG), we have 
+                successfully create a stable movement for the robot to go straight, turn right, and turn left. 
+                In the end, we have create a bipedal robot that can follow a line and travel 16 meters.    
+            </p>
+        </div>
+
+        <div class="card" id="humanoid1">
+            <h3>Humanoid Robots ver.1 </h3>
+            <div class="image-gallery">
+                <img src="images/humanoid11.png" alt="humanoid11">
+                <img src="images/humanoid12.png" alt="humanoid12">
+            </div>
+            <p>
+                This is the most interesting projects that I have been in so far. On September 2019 I was a 
+                member of a robotic club at my university, with a specialization in humanoid robots. I become 
+                the head of electrical division, which is responsible for the power supplied to the robot, the 
+                movement of the robot, and the communication between the mini computer to the microcontroller 
+                that drives the motion of the robot. The hardware used in this robot is Dynamixel servo which 
+                support daisy chain, OpenCM9.04 as the brain used to drive the motion of the robot, RaspberryPi 
+                as the brain of the vision to make the robot able to make decision of what should it perform 
+                according to the video processed by the openCV library inside the RaspberryPi mini computer, and 
+                the C920 logitech webcam to take the video. The main task of this robot is to play soccer, which 
+                will be competing on a national competition held by the ministry of education and culture, 
+                Republic of Indonesia.     
+            </p>
+        </div>
+
+        <div class="card" id="revhead">
+            <h3>Revolution Head </h3>
+            <div class="image-gallery">
+                <img src="images/revhead.jpg" alt="revhead">
+            </div>
+            <p>
+                This project is done during the same period as the Ceiling dolly project. We were trusted to make 
+                a custom revolution head to be used in the studio. The difference between the ceiling dolly and 
+                the revolution head is that the revolution head is static and it can only give a 180° sight to 
+                the stage. The control system of this device is the same as the ceiling dolly. It uses the NRF24L01 
+                RF module for the communication between two microcontrollers. The only difference is the microcontroller 
+                and the input device that is used. We use the Arduino Uno and the Arduino nano for the transmitter and 
+                the receiver, respectively. The input for this device is a joystick to drive the revolution head around 
+                the pitch and yaw axis, a potentiometer to control the speed, and two buttons to change the direction 
+                according to the respective operator sight.     
+            </p>
+        </div>
+
     </section>
 
     <section class="contact">

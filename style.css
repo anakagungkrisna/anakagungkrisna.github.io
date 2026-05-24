@@ -159,3 +159,31 @@ h2 {
 .image-slider img:hover {
     transform: scale(1.02);
 }
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin: 25px 0;
+}
+
+.image-gallery img {
+    max-height: 320px;
+    width: auto;
+
+    border-radius: 14px;
+
+    object-fit: contain;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+
+    transition: 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.02);
+}
