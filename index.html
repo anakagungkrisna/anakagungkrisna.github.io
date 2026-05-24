@@ -11,6 +11,7 @@
     <header>
         <h1>Anak Agung Krisna Ananda Kusuma</h1>
         <p>Robotics, AI, and Digital Systems Specialist</p>
+        <p1>Email: krisnakusuma0500@gmail.com | Mobile: +62-813-1977-1165</p1>
     </header>
 
 
@@ -57,10 +58,21 @@
         <!-- Navigation Grid -->
         <div class="toc-grid">
 
-            <a href="#f1tenth">F1Tenth Racecar</a>
             <a href="#go1">Go1 Quadruped</a>
-            <a href="#humanoid">Humanoid Robot</a>
+            <a href="#f1tenth">F1Tenth Autonomous Racecar</a>   
             <a href="#jetbot">Jetbot Mini Robot</a>
+            <a href="#mrRobot">Mr. Robot</a>       
+            <a href="#QRcode">Projektarbeit QR-Code</a>
+            <a href="#imageclass">Environment Image Classification</a>
+            <a href="#lora">LoRa Gateway Reporting Automation</a>
+            <a href="#humanoid2">Humanoid Robot Ver.2</a>
+            <a href="#humanoid1">Humanoid Robot Ver.1</a>
+            <a href="#revhead">Revolution Head</a>
+            <a href="#ceilingdolly">Ceiling Dolly</a>
+            <a href="#covidvent">Covid Emergency Ventilator</a>
+            <a href="#pfa">Plantation Field Analyzer</a>
+            <a href="#esp">Electrostatic Precipitator</a>
+            
 
         </div>
 
@@ -68,24 +80,70 @@
         <div class="projects-divider"></div>
 
         <!-- Project Cards -->
-
-        <div class="card" id="f1tenth">
-            <h3>F1Tenth Autonomous Racecar</h3>
-
-            <img src="images/f110_car.jpg" alt="F1Tenth">
-
+        <div class="card" id="go1">
+            <h3>CIRL Go1 Quadruped Robot</h3>
+            <div class="image-slider">
+                <img src="images/go1_sim1.png" alt="go1sim1">
+                <img src="images/go1_sim2.png" alt="go1sim2">
+                <img src="images/go1_hardware.jpg" alt="go1hardware">
+            </div>
             <p>
-                Developed autonomous racing controllers using ROS,
-                Gazebo, MPC, and LiDAR-based perception.
+                This project is part of my thesis as well as my second research while I was a 
+                research assistant in CIRL lab, Seoultech. In this research, we are focusing on 
+                robust control method for imitation learning on quadruped robot. The method is 
+                developed using Python and C++ in OCS2 framework and Gazebo simulation. 
+                The robot that is used is based on a Unitree Go1 robot with additional bracket to 
+                mount extra sensors (Lidar, Depth camera) and compute power (NVIDIA Jetson Orin NX). 
+                The robustness of the imitation learning method in this research work is based on the 
+                Hamiltonial loss for learning the policy. While most imitation learning method is focused 
+                on the behavior cloning loss, in this work, we combine the Hamiltonian loss with the 
+                behavior cloning loss to provide a smooth and robust imitation learning control policy, 
+                achieving better results compared to using only Hamiltonian loss which resulted in robust 
+                but aggressive movement and using only behavior cloning loss which resulted in smooth movement but not robust. 
             </p>
         </div>
 
-        <div class="card" id="go1">
-            <h3>CIRL Go1 Quadruped Robot</h3>
-
+        <div class="card" id="f1tenth">
+            <h3>F1Tenth Autonomous Racecar</h3>
+            <div class="image-slider">
+                <img src="images/f110_car.jpg" alt="f110car">
+                <img src="images/f110_sim.jpg" alt="f110sim">
+            </div>
             <p>
-                Research on robust imitation learning and locomotion
-                control for quadruped robots.
+                This project is related to my research topic while doing my masters in 
+                Control and Intelligent Robotics Lab, Seoul National University of Science and Technology. 
+                In this research, we are developing control method for an autonomous racecar. We have implemented 
+                reactive, geometrical, and model predictive control method to the car. We also develop our own 
+                simulation environment using Gazebo and ROS, and visualize our algorithm using RViz.  
+                The workflow of our work consists of implementing the controller algorithm in Gazebo simulation 
+                environment and visualize it in RViz. Once the car inside the simulation has achieved satisfactory 
+                results in terms of safety and speed, we continue to implement it in the real robot. 
+                The robot uses Hokuyo Lidar, IMU, and wheel encoder as the sensor, Jetson Orin NX as the main 
+                computing board, and Traxxas chassis for the car body. Operating system that is used is Ubuntu 20.04 
+                and ROS Noetic. Programming language used is C++ and Python. 
+            </p>
+        </div>
+
+        <div class="card" id="jetbot">
+            <h3>Jetbot Mini Robot </h3>
+            <div class="image-slider">
+                <img src="images/jetbot_hardware.jpg" alt="jetbothardware">
+                <img src="images/jetbot_hardware2.jpg" alt="jetbothardware2">
+                <img src="images/jetbot_dataset.png" alt="jetbothardware">
+                <img src="images/jetbot_training.png" alt="jetbothardware2">
+            </div>
+            <p>
+                This is the final project of a course that I took during my second semester of my master's degree. 
+                The objective is to create a deep learning model to be implemented in the robot so that the robot 
+                can follow the path. For this, I use a convolutional neural network as my model, and built and train 
+                it using tensorflow. The datasets are taken based on a python script that I create so that I can just 
+                move the robot in the track and the script will automatically take the images based on the keyboard 
+                button press w,a,s,d. I assign 4 classes, which are forward, backward, left, and right. In the end, 
+                I manage to get around 6000 image in total. Training is done in google collab, and inference is done 
+                in the robot. Since the computer in the robot use Jetson Nano, which is not compatible with tensorflow, 
+                I need to convert the tensorflow model to tensorflow lite model. In the end, the robot ables to follow 
+                the track very reliably, and from this course, I learned that the most important aspect in training a 
+                model is to provide a clean dataset so that the network can work reliably.
             </p>
         </div>
     </section>

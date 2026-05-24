@@ -20,6 +20,10 @@ header p {
     font-size: 20px;
     color: #94a3b8;
 }
+header p1 {
+    font-size: 20px;
+    color: #e1dddd;
+}
 
 section {
     max-width: 1000px;
@@ -41,9 +45,26 @@ h2 {
 }
 
 .card img {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.9;
+    color: #cbd5e1;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    text-align: justify;
+    margin-top: 25px;
+
+    background-color: rgba(255,255,255,0.02);
+    padding: 24px;
+
+    border-left: 2px solid #16366a;
+    border-right: 2px solid #16366a;
 }
 
 
@@ -79,6 +100,7 @@ h2 {
 .about-text p {
     line-height: 1.8;
     color: #cbd5e1;
+    text-align: justify;
 }
 
 
@@ -112,4 +134,28 @@ h2 {
 .details-title {
     margin-bottom: 30px;
     color: #cbd5e1;
+}
+
+
+.image-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.image-slider img {
+    max-height: 320px;
+    width: auto;
+    border-radius: 12px;
+    flex-shrink: 0;
+
+    transition: 0.3s;
+    object-fit: contain;
+}
+
+.image-slider img:hover {
+    transform: scale(1.02);
 }
