@@ -83,9 +83,9 @@
         <div class="card" id="go1">
             <h3>CIRL Go1 Quadruped Robot</h3>
             <div class="image-slider">
-                <img src="images/go1_sim1.png" alt="go1sim1">
-                <img src="images/go1_sim2.png" alt="go1sim2">
-                <img src="images/go1_hardware.jpg" alt="go1hardware">
+                <img src="images/go1_sim1.jpg" alt="go1_sim1">
+                <img src="images/go1_sim2.jpg" alt="go1_sim2">
+                <img src="images/go1_hardware.jpg" alt="go1_hardware">
             </div>
             <p>
                 This project is part of my thesis as well as my second research while I was a 
@@ -205,7 +205,7 @@
 
         <div class="card" id="imageclass">
             <h3>Environment Image Classification </h3>
-            <div class="image-gallery">
+            <div class="image-slider">
                 <img src="images/environment_dataset.png" alt="environment_dataset">
                 <img src="images/environment_training.png" alt="environment_training">
             </div>
@@ -246,7 +246,7 @@
 
         <div class="card" id="humanoid2">
             <h3>Humanoid Robots ver.2 </h3>
-            <div class="image-gallery">
+            <div class="image-slider">
                 <img src="images/humanoid21.png" alt="humanoid21">
                 <img src="images/humanoid22.png" alt="humanoid22">
             </div>
@@ -303,6 +303,99 @@
                 the receiver, respectively. The input for this device is a joystick to drive the revolution head around 
                 the pitch and yaw axis, a potentiometer to control the speed, and two buttons to change the direction 
                 according to the respective operator sight.     
+            </p>
+        </div>
+
+        <div class="card" id="ceilingdolly">
+            <h3>Ceiling Dolly </h3>
+            <div class="image-slider">
+                <img src="images/ceildol1.jpg" alt="ceildol1">
+                <img src="images/ceildol2.jpg" alt="ceildol2">
+            </div>
+            <p>
+                This project is one of the biggest projects I have done so far. I was hired as an electrical 
+                engineer in a studio to make a custom ceiling dolly. We consist of a group of four students 
+                from the same university, which has various background. Me and one of my friends do the control 
+                system of the ceiling dolly. The purpose of this device is to give a recording camera a 360° sight 
+                for it to be able to capture all the events happening in the studio stage. We use the Arduino mega 
+                Pro as the brain of our system, which will drive the train that carries the camera. For the ease of 
+                the controlling system, we use the NRF24L01 wireless RF module to communicate with the Arduino mega 
+                pro. For this, we need to have another controller that makes the communication possible. Arduino nano 
+                is the perfect candidate because of the relatively small size. It will process the input coming from 
+                the operator at the ground and then send it using the NRF24L01 module to the Arduino mega pro, which 
+                will then interpret the input to give the desired output. The input of this device is a joystick to 
+                drive the ceiling dolly arm (consist of 2 motor) in the roll and yaw axes direction, two buttons to 
+                drive the train backward and forward, 3 potentiometers to control the speed of the 3 motor.      
+            </p>
+        </div>
+
+        <div class="card" id="covidvent">
+            <h3>Covid emergency Ventilator </h3>
+            <div class="image-gallery">
+                <img src="images/covent1.png" alt="covent1">
+                <img src="images/covent2.png" alt="covent2">
+            </div>
+            <p>
+                This is a university project which is intended to provide an emergency ventilator which 
+                is highly needed for covid patients during the global pandemic 2020. I work as the printed 
+                circuit board (PCB) designer and production in the development team. For this reason, I use 
+                the software Altium designer to fulfil my duty. First, I gather all the connections of the 
+                circuit, and then verify it to the team leader whether the connection is right or wrong. I 
+                also asked about the pin configuration that I can use to simplify the wiring later on. Because 
+                this is the development part, I use a traditional etching method to produce my PCB. first, 
+                I print the circuit that I have made from Altium designer into a piece of photo paper. Then, by 
+                using heat from the laminating machine, I stick the printed circuit into a piece of copper board. 
+                Next, I soak the copper board into a bucket of FeCl solution. This is used to remove unwanted copper 
+                in our PCB. After that, I clean it with running water from the FeCl solution. Finally, the PCB is 
+                then completed. This ventilator will finally be distributed across the archipelago to give a covid 
+                patients a better chance to survive.      
+            </p>
+        </div>
+
+        <div class="card" id="pfa">
+            <h3>Plantation Field Analyzer </h3>
+            <div class="image-slider">
+                <img src="images/pfa_diagram.png" alt="pfa_diagram">
+                <img src="images/pfa_result.png" alt="pfa_result">
+            </div>
+            <p>
+                Plantation Field Analyzer (or PFA for short) is a plantation field monitoring system which 
+                is used to increase the productivity of a plantation field. This system consists of two 
+                subsystems, which are aerial monitoring system and ground monitoring system. For aerial 
+                monitoring system, we use a drone which is controlled by a raspberryPi mini computer to 
+                take images of the plantation field from above. This image is then processed with library 
+                called OpenCV to generate the difference in color, which then can be used to tell whether 
+                something bad happened to the plantation field. For ground monitoring system, we use the 
+                ESP32 microcontroller which has a built-in wifi to send the data to the monitoring laptop. 
+                It provides the soil moisture data and the air and humidity temperature data of the ground. 
+                After we have succeeded to get those 2 types of data (from aerial monitoring system and ground 
+                monitoring system), we then compare it to achieve a conclusion about the status of the 
+                plantation field. Because of this innovation, we have won a technological development competition 
+                that is held in Universitas Udayana, Bali.      
+            </p>
+        </div>
+
+        <div class="card" id="esp">
+            <h3>Electrostatic Precipitator </h3>
+            <div class="image-gallery">
+                <img src="images/esp.jpg" alt="esp">
+            </div>
+            <p>
+                Electrostatic precipitator is the first project that I have indulged in. I was in charged for the 
+                electrical circuit design and assembly, including the selection of components used. This is a 
+                project that is done in team with one supervisor, which in result giving an output of a patent. 
+                The use of this device is to purify dirty air by a principle of electrostatic. This principle is 
+                commonly used in coal powerplant, where it produces very small particle byproduct which is very 
+                dangerous to human health. The way to solve this problem is to trap the small particle 
+                (usually in range of micrometer) in the first place. This project is the device used in the powerplant, 
+                only on a smaller scale.  First, a 9V input of an adapter is fed on a simple inverter, where the output 
+                will be connected to a transformer. This will increase the voltage up to 1kV. In order for this air 
+                purifier method to work efficiently, it needs to have an output voltage of above 20kV. To get such high 
+                voltage, we use the voltage multiplier circuit, where it consists of 15 stages which will increase the 
+                output voltage into 30kV DC. As a result, this method of electrostatic precipitator can trap molecule 
+                diffused in air. We test for several object where it can produce smoke, simulating the dirty air, which 
+                are cigarette and an incense stick. It can be seen from the result that it can trap small particles 
+                produced by the two.       
             </p>
         </div>
 
