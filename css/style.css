@@ -7,8 +7,16 @@ body {
 
 header {
     text-align: center;
-    padding: 80px 20px;
-    background-color: #111827;
+    padding: 100px 20px;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("../images/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header h1 {
@@ -18,12 +26,15 @@ header h1 {
 
 header p {
     font-size: 20px;
-    color: #94a3b8;
+    color: #d5dae1;
 }
-header p1 {
+
+header .contact-info {
     font-size: 20px;
     color: #e1dddd;
+    font-weight: bold;
 }
+
 
 section {
     max-width: 1000px;
