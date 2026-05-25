@@ -83,26 +83,71 @@
 
         <!-- Project Cards -->
         <div class="card" id="go1">
-            <h3>CIRL Go1 Quadruped Robot</h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>CIRL Go1 Quadruped Robot</h3>
+
+                <span class="project-tag">
+                    Quadruped Robot • Imitation Learning • Robotics Research
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/go1_sim1.jpg" alt="go1_sim1">
                 <img src="images/go1_sim2.jpg" alt="go1_sim2">
                 <img src="images/go1_hardware.jpg" alt="go1_hardware">
             </div>
-            <p>
-                This project is part of my thesis as well as my second research while I was a 
-                research assistant in CIRL lab, Seoultech. In this research, we are focusing on 
-                robust control method for imitation learning on quadruped robot. The method is 
-                developed using Python and C++ in OCS2 framework and Gazebo simulation. 
-                The robot that is used is based on a Unitree Go1 robot with additional bracket to 
-                mount extra sensors (Lidar, Depth camera) and compute power (NVIDIA Jetson Orin NX). 
-                The robustness of the imitation learning method in this research work is based on the 
-                Hamiltonial loss for learning the policy. While most imitation learning method is focused 
-                on the behavior cloning loss, in this work, we combine the Hamiltonian loss with the 
-                behavior cloning loss to provide a smooth and robust imitation learning control policy, 
-                achieving better results compared to using only Hamiltonian loss which resulted in robust 
-                but aggressive movement and using only behavior cloning loss which resulted in smooth movement but not robust. 
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop robust imitation learning control policy for quadruped locomotion control</li>
+                    <li>Improve robustness and smoothness of learned locomotion behavior</li>
+                    <li>Integrate advanced reinforcement and optimal control framework for robotics research</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>C++</span>
+                    <span>OCS2</span>
+                    <span>Gazebo</span>
+                    <span>Unitree Go1</span>
+                    <span>Jetson Orin NX</span>
+                    <span>Imitation Learning</span>
+                    <span>Optimal Control</span>
+                    <span>Robot Control</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    This project is part of my thesis as well as my second research while I was a 
+                    research assistant in CIRL lab, Seoultech. In this research, we are focusing on 
+                    robust control method for imitation learning on quadruped robot. The method is 
+                    developed using Python and C++ in OCS2 framework and Gazebo simulation. The robot 
+                    that is used is based on a Unitree Go1 robot with additional bracket to mount extra 
+                    sensors (Lidar, Depth camera) and compute power (NVIDIA Jetson Orin NX). The robustness 
+                    of the imitation learning method in this research work is based on the Hamiltonial 
+                    loss for learning the policy. While most imitation learning method is focused on the 
+                    behavior cloning loss, in this work, we combine the Hamiltonian loss with the behavior 
+                    cloning loss to provide a smooth and robust imitation learning control policy, achieving 
+                    better results compared to using only Hamiltonian loss which resulted in robust but 
+                    aggressive movement and using only behavior cloning loss which resulted in smooth 
+                    movement but not robust. 
+                </p>
+
+            </div>
         </div>
 
         <div class="card" id="f1tenth">
@@ -111,7 +156,7 @@
                 <h3>F1Tenth Autonomous Racecar</h3>
 
                 <span class="project-tag">
-                    Autonomous Systems • Robotics Research
+                    Autonomous Racecar • Optimal Control • Path Planning • Robotics Research
                 </span>
             </div>
 
@@ -134,11 +179,9 @@
 
             <!-- Technical Skills -->
             <div class="project-section">
-
                 <h4>Technical Skills</h4>
 
                 <div class="tech-stack">
-
                     <span>ROS Noetic</span>
                     <span>Gazebo</span>
                     <span>RViz</span>
@@ -147,9 +190,7 @@
                     <span>MPC</span>
                     <span>Jetson Orin NX</span>
                     <span>LiDAR</span>
-
                 </div>
-
             </div>
 
             <!-- Detailed Description -->
@@ -172,31 +213,90 @@
             </div>
         </div>
 
+
+
         <div class="card" id="jetbot">
-            <h3>Jetbot Mini Robot </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Jetbot Mini Robot</h3>
+
+                <span class="project-tag">
+                    Wheeled Robot • Deep Learning • Embedded AI 
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/jetbot_hardware.jpg" alt="jetbothardware">
                 <img src="images/jetbot_hardware2.jpg" alt="jetbothardware2">
-                <img src="images/jetbot_dataset.png" alt="jetbothardware">
-                <img src="images/jetbot_training.png" alt="jetbothardware2">
+                <img src="images/jetbot_dataset.png" alt="jetbotdataset">
+                <img src="images/jetbot_training.png" alt="jetbottraining">
             </div>
-            <p>
-                This is the final project of a course that I took during my second semester of my master's degree. 
-                The objective is to create a deep learning model to be implemented in the robot so that the robot 
-                can follow the path. For this, I use a convolutional neural network as my model, and built and train 
-                it using tensorflow. The datasets are taken based on a python script that I create so that I can just 
-                move the robot in the track and the script will automatically take the images based on the keyboard 
-                button press w,a,s,d. I assign 4 classes, which are forward, backward, left, and right. In the end, 
-                I manage to get around 6000 image in total. Training is done in google collab, and inference is done 
-                in the robot. Since the computer in the robot use Jetson Nano, which is not compatible with tensorflow, 
-                I need to convert the tensorflow model to tensorflow lite model. In the end, the robot ables to follow 
-                the track very reliably, and from this course, I learned that the most important aspect in training a 
-                model is to provide a clean dataset so that the network can work reliably.
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop an autonomous path-following robot using deep learning</li>
+                    <li>Create a custom image dataset collection pipeline</li>
+                    <li>Train and deploy CNN model on embedded robotic hardware</li>
+                    <li>Optimize AI inference for NVIDIA Jetson Nano platform</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>TensorFlow Lite</span>
+                    <span>Convolutional Neural Network</span>
+                    <span>Jetson Nano</span>
+                    <span>Embedded AI</span>
+                    <span>Computer Vision</span>
+                    <span>Dataset Collection</span>
+                    <span>Google Colab</span>
+                    <span>Deep Learning</span>
+                    <span>Autonomous Navigation</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    This is the final project of a course that I took during my second semester of my master's degree. 
+                    The objective is to create a deep learning model to be implemented in the robot so that the robot 
+                    can follow the path. For this, I use a convolutional neural network as my model, and built and train 
+                    it using tensorflow. The datasets are taken based on a python script that I create so that I can just 
+                    move the robot in the track and the script will automatically take the images based on the keyboard 
+                    button press w,a,s,d. I assign 4 classes, which are forward, backward, left, and right. In the end, 
+                    I manage to get around 6000 image in total. Training is done in google collab, and inference is done 
+                    in the robot. Since the computer in the robot use Jetson Nano, which is not compatible with tensorflow, 
+                    I need to convert the tensorflow model to tensorflow lite model. In the end, the robot ables to follow 
+                    the track very reliably, and from this course, I learned that the most important aspect in training a 
+                    model is to provide a clean dataset so that the network can work reliably.
+                </p>
+            </div>
         </div>
 
+
+
         <div class="card" id="mrRobot">
-            <h3>Mr. Robot </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Mr. Robot</h3>
+
+                <span class="project-tag">
+                    Wheeled Robot • Embedded Systems • Full Stack Robot Development
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/mrRobot1.jpeg" alt="mrRobot1">
                 <img src="images/mrRobot2.jpeg" alt="mrRobot2">
@@ -205,254 +305,734 @@
                 <img src="images/mrRobot5.jpeg" alt="mrRobot5">
                 <img src="images/mrRobot6.png" alt="mrRobot6">
             </div>
-            <p>
-                This is a personal project that I have done since the beginning of 2020. It acts like a 
-                learning ground for me to satisfy my curiosity in creating a robot from scratch. Not only that, 
-                it also allows me to apply the knowledge that I gain from the university to real life problems. 
-                This robot is driven with 4 motors that is connected to a mechanum wheels. Those wheels are driven 
-                by STM32 microcontroller which also monitor the wheel encoder of the motor. There are other 
-                microcontrollers that is inside the robot, which are the Arduino pro micro and pro mini to drive 
-                the LEDs, interacting with the LCD display, running the servo motor, reading the GPS sensor, 
-                compass sensor, 6 DOF IMU sensor, thermal camera, and the input from a USB device such as a 
-                USB keyboard for manual control of the robot. Those microcontrollers are connected throguh a 
-                serial communication with each other so that all microcontrollers can exchange data. The brain of 
-                the robot consists of 2 Single Board Computers (SBC), which are the RaspberryPi Zero ver.2 and Lattepanda. 
-                These SBCs will work with the monocular camera attached to the servo motor as the main input of the robot 
-                to sense the environment. Even though it is still far from finish, I hope that as time passes, 
-                I can learn the robotic development process from the ground up and apply the knowledge that I get 
-                later on when I work as a robotic engineer.  
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a robot completely from scratch as a long-term personal robotics platform</li>
+                    <li>Apply robotics, embedded systems, and control theory knowledge to real-world implementations</li>
+                    <li>Integrate multiple sensors, microcontrollers, and computing systems into a unified robotic platform</li>
+                    <li>Learn the complete robotic system development workflow from hardware to software integration</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>STM32</span>
+                    <span>Arduino</span>
+                    <span>Raspberry Pi Zero 2</span>
+                    <span>LattePanda</span>
+                    <span>Embedded Systems</span>
+                    <span>Serial Communication</span>
+                    <span>Motor Control</span>
+                    <span>Sensor Integration</span>
+                    <span>Robotics Development</span>
+                    <span>Computer Vision</span>
+                    <span>LCD Interface</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                     This is a personal project that I have done since the beginning of 2020. It acts like a 
+                    learning ground for me to satisfy my curiosity in creating a robot from scratch. Not only that, 
+                    it also allows me to apply the knowledge that I gain from the university to real life problems. 
+                    This robot is driven with 4 motors that is connected to a mechanum wheels. Those wheels are driven 
+                    by STM32 microcontroller which also monitor the wheel encoder of the motor. There are other 
+                    microcontrollers that is inside the robot, which are the Arduino pro micro and pro mini to drive 
+                    the LEDs, interacting with the LCD display, running the servo motor, reading the GPS sensor, 
+                    compass sensor, 6 DOF IMU sensor, thermal camera, and the input from a USB device such as a 
+                    USB keyboard for manual control of the robot. Those microcontrollers are connected throguh a 
+                    serial communication with each other so that all microcontrollers can exchange data. The brain of 
+                    the robot consists of 2 Single Board Computers (SBC), which are the RaspberryPi Zero ver.2 and Lattepanda. 
+                    These SBCs will work with the monocular camera attached to the servo motor as the main input of the robot 
+                    to sense the environment. Even though it is still far from finish, I hope that as time passes, 
+                    I can learn the robotic development process from the ground up and apply the knowledge that I get 
+                    later on when I work as a robotic engineer.
+                </p>
+            </div>
         </div>
 
+
+
         <div class="card" id="QRcode">
-            <h3>Projektarbeit QR-Code </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Projektarbeit QR-Code</h3>
+
+                <span class="project-tag">
+                    Windows Form Application • QR-Code System • Software Automation Development
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/projektarbeitqrcode.png" alt="projektarbeitqrcode">
                 <img src="images/qrcodeapp1.png" alt="qrcodeapp1">
                 <img src="images/qrcodeapp2.png" alt="qrcodeapp2">
                 <img src="images/qrcodeapp3.png" alt="qrcodeapp3">
             </div>
-            <p>
-                During my first semester in Germany, I need to be a part of a project to complete my study. 
-                For this, I applied to the project called Projektarbeit QR-Code (Project work QR-Code) and 
-                got accepted. On this project, me and my one colleague were asked to develop a windows application 
-                that is able to work with two functionalities, which are taking an excel file as an input that 
-                consist of students data and output an answer sheets for each of the students in the form of 
-                Microsoft word file and taking an image file of the scanned answer sheet and output an excel file 
-                that consist of the students data from the scanned answer sheets. The way this work is that we create 
-                a windows application that creates a QR code based on the student data and place it in the specified 
-                location of the generated answer sheet. Since QR-Code is basically a medium to store a few number of 
-                characters, we can use it as a medium to exchange data from digital world to physical world and vice versa.  
-                When the answer sheet is to be read, the scanned answer sheet is then taken as input so that the 
-                decoding of the QR code can be executed. By this, we have a system that is able to generate an answer 
-                sheet for the students to fill in and read the answer sheet to know which answer sheet belongs to. 
-                This project is at the end going to be combined with the other project, which are the student answer 
-                recognition system for multiple choice test answer sheet.  
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a Windows application for automated student answer sheet generation</li>
+                    <li>Create a QR-code based data transfer system between digital and physical documents</li>
+                    <li>Automate answer sheet identification and student data extraction workflow</li>
+                    <li>Integrate document generation and QR-code decoding into a single application</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>C#</span>
+                    <span>Windows Application Development</span>
+                    <span>QR-Code</span>
+                    <span>Microsoft Excel Integration</span>
+                    <span>Microsoft Word Automation</span>
+                    <span>Document Automation</span>
+                    <span>Software Engineering</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    During my first semester in Germany, I need to be a part of a project to complete my study. 
+                    For this, I applied to the project called Projektarbeit QR-Code (Project work QR-Code) and 
+                    got accepted. On this project, me and my one colleague were asked to develop a windows application 
+                    that is able to work with two functionalities, which are taking an excel file as an input that 
+                    consist of students data and output an answer sheets for each of the students in the form of 
+                    Microsoft word file and taking an image file of the scanned answer sheet and output an excel file 
+                    that consist of the students data from the scanned answer sheets. The way this work is that we create 
+                    a windows application that creates a QR code based on the student data and place it in the specified 
+                    location of the generated answer sheet. Since QR-Code is basically a medium to store a few number of 
+                    characters, we can use it as a medium to exchange data from digital world to physical world and vice versa.  
+                    When the answer sheet is to be read, the scanned answer sheet is then taken as input so that the 
+                    decoding of the QR code can be executed. By this, we have a system that is able to generate an answer 
+                    sheet for the students to fill in and read the answer sheet to know which answer sheet belongs to. 
+                    This project is at the end going to be combined with the other project, which are the student answer 
+                    recognition system for multiple choice test answer sheet.
+                </p>
+            </div>
         </div>
 
+
+
+
         <div class="card" id="imageclass">
-            <h3>Environment Image Classification </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Environment Image Classification</h3>
+
+                <span class="project-tag">
+                    Image Classification • Deep Learning • Computer Vision
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/environment_dataset.png" alt="environment_dataset">
                 <img src="images/environment_training.png" alt="environment_training">
             </div>
-            <p>
-                During my time taking the Fresh Graduate Academy of Digital Talent Scholarship from the Ministry 
-                of Communication and Information Technology, Indonesia, the last project is to develop a model 
-                that can classify image datasets from kaggle. It is a group of two person and we are free to 
-                choose any dataset that suites our interest. We found environment image classification interesting 
-                and decided to use it for our final project. We create a convolutional neural network for our 
-                model using tensorfow. For the image to classify better in unknown input space, we perform data 
-                augmentation to the dataset such as flip, rotate, and zoom the image. Although the validation 
-                accuracy is not satisfactory yet, which are above 95 percent, We can see an increasing trend for 
-                the accuracy and decreasing trend for the loss, which means the model we created are learning 
-                correctly. We believe by tuning the size of the network and give more epochs to train, our model 
-                are able to classify the images correctly.   
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a deep learning model for environmental image classification</li>
+                    <li>Create and preprocess image datasets for supervised learning</li>
+                    <li>Train and evaluate CNN-based image recognition models</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>Convolutional Neural Network</span>
+                    <span>Computer Vision</span>
+                    <span>Image Classification</span>
+                    <span>Dataset Processing</span>
+                    <span>Deep Learning</span>
+                    <span>Model Training</span>
+                    <span>Data Augmentation</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    During my time taking the Fresh Graduate Academy of Digital Talent Scholarship from the Ministry 
+                    of Communication and Information Technology, Indonesia, the last project is to develop a model 
+                    that can classify image datasets from kaggle. It is a group of two person and we are free to 
+                    choose any dataset that suites our interest. We found environment image classification interesting 
+                    and decided to use it for our final project. We create a convolutional neural network for our 
+                    model using tensorfow. For the image to classify better in unknown input space, we perform data 
+                    augmentation to the dataset such as flip, rotate, and zoom the image. Although the validation 
+                    accuracy is not satisfactory yet, which are above 95 percent, We can see an increasing trend for 
+                    the accuracy and decreasing trend for the loss, which means the model we created are learning 
+                    correctly. We believe by tuning the size of the network and give more epochs to train, our model 
+                    are able to classify the images correctly.
+                </p>
+            </div>
         </div>
 
+
+
+        
         <div class="card" id="lora">
-            <h3>LoRa Gateway Reporting Automation </h3>
-            <div class="image-gallery">
-                <img src="images/autolora.png" alt="environment_dataset">
+            <!-- Header -->
+            <div class="card-header">
+                <h3>LoRa Gateway Reporting Automation</h3>
+
+                <span class="project-tag">
+                    System Automation • Automatic Reporting • Internship Project
+                </span>
             </div>
-            <p>
-                As for a prerequisite to continue my study of dual-degree program for Universitas Indonesia - 
-                Universität Duisburg-Essen, I need to have an internship for at least 13 weeks. For this, 
-                I was working at Telkom Indonesia in the Department Digital and Next Business. There, I work 
-                closely to the monitoring of the LoRa Gateway that Telkom Indonesia has. Due to inefficient 
-                reporting method that exist, I propose an automatic system for reporting the LoRa Gateway status. 
-                A more familiar term for The system that is created for automizing the manual work done by humans 
-                based on digital workers is called Robotic Process Automation (RPA). Since the LoRa Gateway reporting 
-                task is repetitive, the development of RPA for the task is possible. I use python and requests library 
-                to get all the data about the gateways from the available API and process the data so that it can 
-                output the desired result according to the existed reporting format. At the end, I am able to create 
-                a bot that is able to do the LoRa gateway reporting faster and more reliable and can work 24/7.    
-            </p>
+
+            <!-- Images -->
+            <div class="image-gallery">
+                <img src="images/autolora.png" alt="autolora">
+            </div>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Automate repetitive LoRa gateway monitoring and reporting tasks</li>
+                    <li>Reduce manual workload and improve reporting reliability</li>
+                    <li>Integrate API-based gateway monitoring into automated workflows</li>
+                    <li>Develop a 24/7 automated reporting solution using software bots</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Requests Library</span>
+                    <span>REST API</span>
+                    <span>Data Processing</span>
+                    <span>Automation Workflow</span>
+                    <span>Microsoft Excel</span>
+                    <span>Telegram API</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    As for a prerequisite to continue my study of dual-degree program for Universitas Indonesia - 
+                    Universität Duisburg-Essen, I need to have an internship for at least 13 weeks. For this, 
+                    I was working at Telkom Indonesia in the Department Digital and Next Business. There, I work 
+                    closely to the monitoring of the LoRa Gateway that Telkom Indonesia has. Due to inefficient 
+                    reporting method that exist, I propose an automatic system for reporting the LoRa Gateway status. 
+                    A more familiar term for The system that is created for automizing the manual work done by humans 
+                    based on digital workers is called Robotic Process Automation (RPA). Since the LoRa Gateway reporting 
+                    task is repetitive, the development of RPA for the task is possible. I use python and requests library 
+                    to get all the data about the gateways from the available API and process the data so that it can 
+                    output the desired result according to the existed reporting format. At the end, I am able to create 
+                    a bot that is able to do the LoRa gateway reporting faster and more reliable and can work 24/7.  
+                </p>
+            </div>
         </div>
+
+
+        
 
         <div class="card" id="humanoid2">
-            <h3>Humanoid Robots ver.2 </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Humanoid Robots ver.2</h3>
+
+                <span class="project-tag">
+                    Humanoid Robot • Computer Vision • Team Leadership
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/humanoid21.png" alt="humanoid21">
                 <img src="images/humanoid22.png" alt="humanoid22">
             </div>
-            <p>
-                As to continuing the work of my team, on November 2020, I also got selected to become the team 
-                leader of the team.  During my tenure, we agreed to develop the old robot that have not been 
-                touched for quite some time since it is made of a better hardware than the robot ver.1. Because 
-                for this year the task of the robot is to run 8 meter across a field and then go back while also 
-                rotate the pole, we decided to use line following method for this task, since there exist a line 
-                from the start position to the pole at 8 meter mark. During the development, there exist many 
-                problems such as bad computer vision algorithm and unstable movement of the robot. By using trial 
-                and error method for the masking of the camera pixel input and determine the position of the line 
-                in respect to the camera of the robot, we have successfully create a simple intelligence than can 
-                make the robot decide whether it should go forward, right, or left. For the unstable movement of 
-                the robot, by taking reference of human movement and the concept of Center of Gravity (CoG), we have 
-                successfully create a stable movement for the robot to go straight, turn right, and turn left. 
-                In the end, we have create a bipedal robot that can follow a line and travel 16 meters.    
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Redevelop and improve the previous humanoid robot platform</li>
+                    <li>Create a stable bipedal locomotion system for competition tasks</li>
+                    <li>Develop line-following intelligence using computer vision techniques</li>
+                    <li>Lead the robotics team in designing and integrating hardware and software systems</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Robotics</span>
+                    <span>Computer Vision</span>
+                    <span>Image Processing</span>
+                    <span>Kinematics</span>
+                    <span>Motion Control</span>
+                    <span>Embedded Systems</span>
+                    <span>Team Leadership</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    As to continuing the work of my team, on November 2020, I also got selected to become the team 
+                    leader of the team.  During my tenure, we agreed to develop the old robot that have not been 
+                    touched for quite some time since it is made of a better hardware than the robot ver.1. Because 
+                    for this year the task of the robot is to run 8 meter across a field and then go back while also 
+                    rotate the pole, we decided to use line following method for this task, since there exist a line 
+                    from the start position to the pole at 8 meter mark. During the development, there exist many 
+                    problems such as bad computer vision algorithm and unstable movement of the robot. By using trial 
+                    and error method for the masking of the camera pixel input and determine the position of the line 
+                    in respect to the camera of the robot, we have successfully create a simple intelligence than can 
+                    make the robot decide whether it should go forward, right, or left. For the unstable movement of 
+                    the robot, by taking reference of human movement and the concept of Center of Gravity (CoG), we have 
+                    successfully create a stable movement for the robot to go straight, turn right, and turn left. 
+                    In the end, we have create a bipedal robot that can follow a line and travel 16 meters. 
+                </p>
+            </div>
         </div>
 
+
+        
+
         <div class="card" id="humanoid1">
-            <h3>Humanoid Robots ver.1 </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Humanoid Robots ver.1</h3>
+
+                <span class="project-tag">
+                    Humanoid Robot • Embedded Systems
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-gallery">
                 <img src="images/humanoid11.png" alt="humanoid11">
                 <img src="images/humanoid12.png" alt="humanoid12">
             </div>
-            <p>
-                This is the most interesting projects that I have been in so far. On September 2019 I was a 
-                member of a robotic club at my university, with a specialization in humanoid robots. I become 
-                the head of electrical division, which is responsible for the power supplied to the robot, the 
-                movement of the robot, and the communication between the mini computer to the microcontroller 
-                that drives the motion of the robot. The hardware used in this robot is Dynamixel servo which 
-                support daisy chain, OpenCM9.04 as the brain used to drive the motion of the robot, RaspberryPi 
-                as the brain of the vision to make the robot able to make decision of what should it perform 
-                according to the video processed by the openCV library inside the RaspberryPi mini computer, and 
-                the C920 logitech webcam to take the video. The main task of this robot is to play soccer, which 
-                will be competing on a national competition held by the ministry of education and culture, 
-                Republic of Indonesia.     
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a humanoid robot capable of autonomous navigation system</li>
+                    <li>Design reliable electrical and motion control systems for humanoid robot</li>
+                    <li>Integrate computer vision for object and field detection</li>
+                    <li>Prepare the robot for national robotics competition participation</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Robotics</span>
+                    <span>Raspberry Pi</span>
+                    <span>Embedded Systems</span>
+                    <span>Kinematics</span>
+                    <span>Electrical Systems</span>
+                    <span>Serial Communication</span>
+                    <span>Computer Vision</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    This is the most interesting projects that I have been in so far. On September 2019 I was a 
+                    member of a robotic club at my university, with a specialization in humanoid robots. I become 
+                    the head of electrical division, which is responsible for the power supplied to the robot, the 
+                    movement of the robot, and the communication between the mini computer to the microcontroller 
+                    that drives the motion of the robot. The hardware used in this robot is Dynamixel servo which 
+                    support daisy chain, OpenCM9.04 as the brain used to drive the motion of the robot, RaspberryPi 
+                    as the brain of the vision to make the robot able to make decision of what should it perform 
+                    according to the video processed by the openCV library inside the RaspberryPi mini computer, and 
+                    the C920 logitech webcam to take the video. The main task of this robot is to play soccer, which 
+                    will be competing on a national competition held by the ministry of education and culture, 
+                    Republic of Indonesia.    
+                </p>
+            </div>
         </div>
 
+
+
+        
         <div class="card" id="revhead">
-            <h3>Revolution Head </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Revolution Head</h3>
+
+                <span class="project-tag">
+                    Embedded Systems • Wireless Communication • Motor Control
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-gallery">
                 <img src="images/revhead.jpg" alt="revhead">
             </div>
-            <p>
-                This project is done during the same period as the Ceiling dolly project. We were trusted to make 
-                a custom revolution head to be used in the studio. The difference between the ceiling dolly and 
-                the revolution head is that the revolution head is static and it can only give a 180° sight to 
-                the stage. The control system of this device is the same as the ceiling dolly. It uses the NRF24L01 
-                RF module for the communication between two microcontrollers. The only difference is the microcontroller 
-                and the input device that is used. We use the Arduino Uno and the Arduino nano for the transmitter and 
-                the receiver, respectively. The input for this device is a joystick to drive the revolution head around 
-                the pitch and yaw axis, a potentiometer to control the speed, and two buttons to change the direction 
-                according to the respective operator sight.     
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a custom revolution head system for studio camera operation</li>
+                    <li>Create a wireless motion control system using RF communication</li>
+                    <li>Design a reliable embedded control system for real-time camera positioning</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Arduino</span>
+                    <span>Wireless Communication</span>
+                    <span>Embedded Systems</span>
+                    <span>Motor Control</span>
+                    <span>Joystick Interface</span>
+                    <span>PCB Design</span>
+                    <span>Hardware Integration</span>
+                    <span>Electrical System Design</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    This project is done during the same period as the Ceiling dolly project. We were trusted to make 
+                    a custom revolution head to be used in the studio. The difference between the ceiling dolly and 
+                    the revolution head is that the revolution head is static and it can only give a 180° sight to 
+                    the stage. The control system of this device is the same as the ceiling dolly. It uses the NRF24L01 
+                    RF module for the communication between two microcontrollers. The only difference is the microcontroller 
+                    and the input device that is used. We use the Arduino Uno and the Arduino nano for the transmitter and 
+                    the receiver, respectively. The input for this device is a joystick to drive the revolution head around 
+                    the pitch and yaw axis, a potentiometer to control the speed, and two buttons to change the direction 
+                    according to the respective operator sight.  
+                </p>
+            </div>
         </div>
 
+
+
+         
         <div class="card" id="ceilingdolly">
-            <h3>Ceiling Dolly </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Ceiling Dolly</h3>
+
+                <span class="project-tag">
+                    Embedded Systems • Motor Control • Wireless Communication
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/ceildol1.jpg" alt="ceildol1">
                 <img src="images/ceildol2.jpg" alt="ceildol2">
             </div>
-            <p>
-                This project is one of the biggest projects I have done so far. I was hired as an electrical 
-                engineer in a studio to make a custom ceiling dolly. We consist of a group of four students 
-                from the same university, which has various background. Me and one of my friends do the control 
-                system of the ceiling dolly. The purpose of this device is to give a recording camera a 360° sight 
-                for it to be able to capture all the events happening in the studio stage. We use the Arduino mega 
-                Pro as the brain of our system, which will drive the train that carries the camera. For the ease of 
-                the controlling system, we use the NRF24L01 wireless RF module to communicate with the Arduino mega 
-                pro. For this, we need to have another controller that makes the communication possible. Arduino nano 
-                is the perfect candidate because of the relatively small size. It will process the input coming from 
-                the operator at the ground and then send it using the NRF24L01 module to the Arduino mega pro, which 
-                will then interpret the input to give the desired output. The input of this device is a joystick to 
-                drive the ceiling dolly arm (consist of 2 motor) in the roll and yaw axes direction, two buttons to 
-                drive the train backward and forward, 3 potentiometers to control the speed of the 3 motor.      
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a custom automated ceiling dolly system for studio camera operation</li>
+                    <li>Create a wireless remote-control architecture for real-time camera movement</li>
+                    <li>Implement multi-axis motion control for cinematic recording applications</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Arduino</span>
+                    <span>Wireless Communication</span>
+                    <span>Embedded Systems</span>
+                    <span>Motor Control</span>
+                    <span>Real-Time Control</span>
+                    <span>Hardware Integration</span>
+                    <span>Electrical System Design</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    This project is one of the biggest projects I have done so far. I was hired as an electrical 
+                    engineer in a studio to make a custom ceiling dolly. We consist of a group of four students 
+                    from the same university, which has various background. Me and one of my friends do the control 
+                    system of the ceiling dolly. The purpose of this device is to give a recording camera a 360° sight 
+                    for it to be able to capture all the events happening in the studio stage. We use the Arduino mega 
+                    Pro as the brain of our system, which will drive the train that carries the camera. For the ease of 
+                    the controlling system, we use the NRF24L01 wireless RF module to communicate with the Arduino mega 
+                    pro. For this, we need to have another controller that makes the communication possible. Arduino nano 
+                    is the perfect candidate because of the relatively small size. It will process the input coming from 
+                    the operator at the ground and then send it using the NRF24L01 module to the Arduino mega pro, which 
+                    will then interpret the input to give the desired output. The input of this device is a joystick to 
+                    drive the ceiling dolly arm (consist of 2 motor) in the roll and yaw axes direction, two buttons to 
+                    drive the train backward and forward, 3 potentiometers to control the speed of the 3 motor.  
+                </p>
+            </div>
         </div>
 
+
+
+         
         <div class="card" id="covidvent">
-            <h3>Covid emergency Ventilator </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Covid Emergency Ventilator</h3>
+
+                <span class="project-tag">
+                    Embedded System • PCB Design • PCB Fabrication
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-gallery">
                 <img src="images/covent1.png" alt="covent1">
                 <img src="images/covent2.png" alt="covent2">
             </div>
-            <p>
-                This is a university project which is intended to provide an emergency ventilator which 
-                is highly needed for covid patients during the global pandemic 2020. I work as the printed 
-                circuit board (PCB) designer and production in the development team. For this reason, I use 
-                the software Altium designer to fulfil my duty. First, I gather all the connections of the 
-                circuit, and then verify it to the team leader whether the connection is right or wrong. I 
-                also asked about the pin configuration that I can use to simplify the wiring later on. Because 
-                this is the development part, I use a traditional etching method to produce my PCB. first, 
-                I print the circuit that I have made from Altium designer into a piece of photo paper. Then, by 
-                using heat from the laminating machine, I stick the printed circuit into a piece of copper board. 
-                Next, I soak the copper board into a bucket of FeCl solution. This is used to remove unwanted copper 
-                in our PCB. After that, I clean it with running water from the FeCl solution. Finally, the PCB is 
-                then completed. This ventilator will finally be distributed across the archipelago to give a covid 
-                patients a better chance to survive.      
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop an emergency ventilator system during the COVID-19 pandemic</li>
+                    <li>Design and manufacture custom PCB hardware for the ventilator system</li>
+                    <li>Create a reliable and simplified electrical system for rapid prototyping</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>PCB Design</span>
+                    <span>Altium Designer</span>
+                    <span>Electronic Circuit Design</span>
+                    <span>Hardware Prototyping</span>
+                    <span>Embedded Hardware</span>
+                    <span>PCB Manufacturing</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    This is a university project which is intended to provide an emergency ventilator which 
+                    is highly needed for covid patients during the global pandemic 2020. I work as the printed 
+                    circuit board (PCB) designer and production in the development team. For this reason, I use 
+                    the software Altium designer to fulfil my duty. First, I gather all the connections of the 
+                    circuit, and then verify it to the team leader whether the connection is right or wrong. I 
+                    also asked about the pin configuration that I can use to simplify the wiring later on. Because 
+                    this is the development part, I use a traditional etching method to produce my PCB. first, 
+                    I print the circuit that I have made from Altium designer into a piece of photo paper. Then, by 
+                    using heat from the laminating machine, I stick the printed circuit into a piece of copper board. 
+                    Next, I soak the copper board into a bucket of FeCl solution. This is used to remove unwanted copper 
+                    in our PCB. After that, I clean it with running water from the FeCl solution. Finally, the PCB is 
+                    then completed. This ventilator will finally be distributed across the archipelago to give a covid 
+                    patients a better chance to survive.  
+                </p>
+            </div>
         </div>
 
+
+
+        
         <div class="card" id="pfa">
-            <h3>Plantation Field Analyzer </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Plantation Field Analyzer</h3>
+
+                <span class="project-tag">
+                    Smart Agriculture • IoT • Computer Vision
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-slider">
                 <img src="images/pfa_diagram.png" alt="pfa_diagram">
                 <img src="images/pfa_result.png" alt="pfa_result">
             </div>
-            <p>
-                Plantation Field Analyzer (or PFA for short) is a plantation field monitoring system which 
-                is used to increase the productivity of a plantation field. This system consists of two 
-                subsystems, which are aerial monitoring system and ground monitoring system. For aerial 
-                monitoring system, we use a drone which is controlled by a raspberryPi mini computer to 
-                take images of the plantation field from above. This image is then processed with library 
-                called OpenCV to generate the difference in color, which then can be used to tell whether 
-                something bad happened to the plantation field. For ground monitoring system, we use the 
-                ESP32 microcontroller which has a built-in wifi to send the data to the monitoring laptop. 
-                It provides the soil moisture data and the air and humidity temperature data of the ground. 
-                After we have succeeded to get those 2 types of data (from aerial monitoring system and ground 
-                monitoring system), we then compare it to achieve a conclusion about the status of the 
-                plantation field. Because of this innovation, we have won a technological development competition 
-                that is held in Universitas Udayana, Bali.      
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a smart plantation monitoring system to improve agricultural productivity</li>
+                    <li>Create aerial and ground monitoring subsystems for environmental analysis</li>
+                    <li>Integrate IoT sensor data with aerial image analysis for decision support</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Raspberry Pi</span>
+                    <span>ESP32</span>
+                    <span>Computer Vision</span>
+                    <span>IoT</span>
+                    <span>Wireless Communication</span>
+                    <span>Sensor Integration</span>
+                    <span>Image Processing</span>
+                    <span>Data Analysis</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    Plantation Field Analyzer (or PFA for short) is a plantation field monitoring system which 
+                    is used to increase the productivity of a plantation field. This system consists of two 
+                    subsystems, which are aerial monitoring system and ground monitoring system. For aerial 
+                    monitoring system, we use a drone which is controlled by a raspberryPi mini computer to 
+                    take images of the plantation field from above. This image is then processed with library 
+                    called OpenCV to generate the difference in color, which then can be used to tell whether 
+                    something bad happened to the plantation field. For ground monitoring system, we use the 
+                    ESP32 microcontroller which has a built-in wifi to send the data to the monitoring laptop. 
+                    It provides the soil moisture data and the air and humidity temperature data of the ground. 
+                    After we have succeeded to get those 2 types of data (from aerial monitoring system and ground 
+                    monitoring system), we then compare it to achieve a conclusion about the status of the 
+                    plantation field. Because of this innovation, we have won a technological development competition 
+                    that is held in Universitas Udayana, Bali.
+                </p>
+            </div>
         </div>
 
+
+
+
+        
         <div class="card" id="esp">
-            <h3>Electrostatic Precipitator </h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>Electrostatic Precipitator</h3>
+
+                <span class="project-tag">
+                    Electronics • Air Purification System
+                </span>
+            </div>
+
+            <!-- Images -->
             <div class="image-gallery">
                 <img src="images/esp.jpg" alt="esp">
             </div>
-            <p>
-                Electrostatic precipitator is the first project that I have indulged in. I was in charged for the 
-                electrical circuit design and assembly, including the selection of components used. This is a 
-                project that is done in team with one supervisor, which in result giving an output of a patent. 
-                The use of this device is to purify dirty air by a principle of electrostatic. This principle is 
-                commonly used in coal powerplant, where it produces very small particle byproduct which is very 
-                dangerous to human health. The way to solve this problem is to trap the small particle 
-                (usually in range of micrometer) in the first place. This project is the device used in the powerplant, 
-                only on a smaller scale.  First, a 9V input of an adapter is fed on a simple inverter, where the output 
-                will be connected to a transformer. This will increase the voltage up to 1kV. In order for this air 
-                purifier method to work efficiently, it needs to have an output voltage of above 20kV. To get such high 
-                voltage, we use the voltage multiplier circuit, where it consists of 15 stages which will increase the 
-                output voltage into 30kV DC. As a result, this method of electrostatic precipitator can trap molecule 
-                diffused in air. We test for several object where it can produce smoke, simulating the dirty air, which 
-                are cigarette and an incense stick. It can be seen from the result that it can trap small particles 
-                produced by the two.       
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop a small-scale electrostatic air purification system</li>
+                    <li>Design and implement high-voltage electrical circuits for particle trapping</li>
+                    <li>Create an effective prototype capable of filtering airborne particles and smoke</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+                    <span>Electrical Circuit Design</span>
+                    <span>High Voltage Engineering</span>
+                    <span>Voltage Multiplier Circuit</span>
+                    <span>Power Electronics</span>
+                    <span>Hardware Prototyping</span>
+                    <span>Electrostatic Systems</span>
+                </div>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    Electrostatic precipitator is the first project that I have indulged in. I was in charged for the 
+                    electrical circuit design and assembly, including the selection of components used. This is a 
+                    project that is done in team with one supervisor, which in result giving an output of a patent. 
+                    The use of this device is to purify dirty air by a principle of electrostatic. This principle is 
+                    commonly used in coal powerplant, where it produces very small particle byproduct which is very 
+                    dangerous to human health. The way to solve this problem is to trap the small particle 
+                    (usually in range of micrometer) in the first place. This project is the device used in the powerplant, 
+                    only on a smaller scale.  First, a 9V input of an adapter is fed on a simple inverter, where the output 
+                    will be connected to a transformer. This will increase the voltage up to 1kV. In order for this air 
+                    purifier method to work efficiently, it needs to have an output voltage of above 20kV. To get such high 
+                    voltage, we use the voltage multiplier circuit, where it consists of 15 stages which will increase the 
+                    output voltage into 30kV DC. As a result, this method of electrostatic precipitator can trap molecule 
+                    diffused in air. We test for several object where it can produce smoke, simulating the dirty air, which 
+                    are cigarette and an incense stick. It can be seen from the result that it can trap small particles 
+                    produced by the two.
+                </p>
+            </div>
         </div>
 
     </section>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: krisnakusuma0500@gmail.com</p>
-    </section>
 
 </body>
 </html>
