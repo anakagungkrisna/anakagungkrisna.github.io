@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anak Agung Krisna Ananda Kusuma</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/toc.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
 
@@ -72,12 +75,11 @@
             <a href="#covidvent">Covid Emergency Ventilator</a>
             <a href="#pfa">Plantation Field Analyzer</a>
             <a href="#esp">Electrostatic Precipitator</a>
-            
-
         </div>
 
         <!-- Divider -->
         <div class="projects-divider"></div>
+
 
         <!-- Project Cards -->
         <div class="card" id="go1">
@@ -104,24 +106,70 @@
         </div>
 
         <div class="card" id="f1tenth">
-            <h3>F1Tenth Autonomous Racecar</h3>
+            <!-- Header -->
+            <div class="card-header">
+                <h3>F1Tenth Autonomous Racecar</h3>
+
+                <span class="project-tag">
+                    Autonomous Systems • Robotics Research
+                </span>
+            </div>
+
             <div class="image-slider">
                 <img src="images/f110_car.jpg" alt="f110car">
                 <img src="images/f110_sim.jpg" alt="f110sim">
             </div>
-            <p>
-                This project is related to my research topic while doing my masters in 
-                Control and Intelligent Robotics Lab, Seoul National University of Science and Technology. 
-                In this research, we are developing control method for an autonomous racecar. We have implemented 
-                reactive, geometrical, and model predictive control method to the car. We also develop our own 
-                simulation environment using Gazebo and ROS, and visualize our algorithm using RViz.  
-                The workflow of our work consists of implementing the controller algorithm in Gazebo simulation 
-                environment and visualize it in RViz. Once the car inside the simulation has achieved satisfactory 
-                results in terms of safety and speed, we continue to implement it in the real robot. 
-                The robot uses Hokuyo Lidar, IMU, and wheel encoder as the sensor, Jetson Orin NX as the main 
-                computing board, and Traxxas chassis for the car body. Operating system that is used is Ubuntu 20.04 
-                and ROS Noetic. Programming language used is C++ and Python. 
-            </p>
+
+            <!-- Objectives -->
+            <div class="project-section">
+                <h4>Objectives</h4>
+
+                <ul>
+                    <li>Develop robust autonomous racing controllers</li>
+                    <li>Create sim-to-real deployment workflow</li>
+                    <li>Improve safety and racing performance</li>
+                    <li>Build custom Gazebo simulation environment</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="project-section">
+
+                <h4>Technical Skills</h4>
+
+                <div class="tech-stack">
+
+                    <span>ROS Noetic</span>
+                    <span>Gazebo</span>
+                    <span>RViz</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>MPC</span>
+                    <span>Jetson Orin NX</span>
+                    <span>LiDAR</span>
+
+                </div>
+
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-section">
+                <h4>Project Details</h4>
+
+                <p>
+                    This project is related to my research topic while doing my masters in 
+                    Control and Intelligent Robotics Lab, Seoul National University of Science and Technology. 
+                    In this research, we are developing control method for an autonomous racecar. We have implemented 
+                    reactive, geometrical, and model predictive control method to the car. We also develop our own 
+                    simulation environment using Gazebo and ROS, and visualize our algorithm using RViz.  
+                    The workflow of our work consists of implementing the controller algorithm in Gazebo simulation 
+                    environment and visualize it in RViz. Once the car inside the simulation has achieved satisfactory 
+                    results in terms of safety and speed, we continue to implement it in the real robot. 
+                    The robot uses Hokuyo Lidar, IMU, and wheel encoder as the sensor, Jetson Orin NX as the main 
+                    computing board, and Traxxas chassis for the car body. Operating system that is used is Ubuntu 20.04 
+                    and ROS Noetic. Programming language used is C++ and Python. 
+                </p>
+            </div>
         </div>
 
         <div class="card" id="jetbot">
